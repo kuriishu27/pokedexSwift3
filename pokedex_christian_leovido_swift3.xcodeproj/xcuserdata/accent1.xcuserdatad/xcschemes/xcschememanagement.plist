@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>pokedex_christian_leovido_swift3.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>7A56CFA41D898B9D00482B5D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7A56CFB81D898B9E00482B5D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7A56CFC31D898B9E00482B5D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
