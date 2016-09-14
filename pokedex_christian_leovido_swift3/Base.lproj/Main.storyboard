@@ -29,7 +29,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="Hps-0I-RQ7"/>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3Bc-2n-fwU">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="black" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3Bc-2n-fwU">
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="523" id="HlO-7Z-vs6"/>
@@ -97,6 +97,9 @@
                             <constraint firstItem="dCq-Ld-0wO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="zzf-kI-qD4"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collection" destination="3Bc-2n-fwU" id="bSS-fb-VNa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
