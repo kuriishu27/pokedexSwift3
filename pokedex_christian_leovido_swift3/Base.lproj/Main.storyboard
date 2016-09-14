@@ -24,21 +24,25 @@
                                     <constraint firstAttribute="height" constant="60" id="Cam-G4-FcE"/>
                                 </constraints>
                             </view>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="mLy-rk-YCO">
+                            <searchBar contentMode="redraw" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mLy-rk-YCO">
+                                <frame key="frameInset" minY="60" height="44"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hps-0I-RQ7">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="Hps-0I-RQ7">
                                 <frame key="frameInset" minY="104" width="375" height="563"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Hps-0I-RQ7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Imn-P7-OCV"/>
                             <constraint firstAttribute="trailing" secondItem="dCq-Ld-0wO" secondAttribute="trailing" id="JQx-NY-jd0"/>
+                            <constraint firstAttribute="trailing" secondItem="Hps-0I-RQ7" secondAttribute="trailing" id="LV4-ia-NHq"/>
                             <constraint firstItem="dCq-Ld-0wO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="YC1-aZ-X7P"/>
                             <constraint firstAttribute="trailing" secondItem="mLy-rk-YCO" secondAttribute="trailing" id="cGL-Du-yg6"/>
                             <constraint firstItem="mLy-rk-YCO" firstAttribute="top" secondItem="dCq-Ld-0wO" secondAttribute="bottom" id="llm-fY-Pwq"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Hps-0I-RQ7" secondAttribute="bottom" id="ssV-sH-LXP"/>
                             <constraint firstItem="mLy-rk-YCO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tBe-tj-Sim"/>
+                            <constraint firstItem="Hps-0I-RQ7" firstAttribute="top" secondItem="mLy-rk-YCO" secondAttribute="bottom" id="z7q-oW-Krk"/>
                             <constraint firstItem="dCq-Ld-0wO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="zzf-kI-qD4"/>
                         </constraints>
                     </view>
@@ -48,4 +52,7 @@
             <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bg" width="1920" height="1200"/>
+    </resources>
 </document>
