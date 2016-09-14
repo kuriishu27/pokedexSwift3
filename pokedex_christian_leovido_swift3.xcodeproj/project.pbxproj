@@ -15,6 +15,7 @@
 		7A56CFBE1D898B9E00482B5D /* pokedex_christian_leovido_swift3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A56CFBD1D898B9E00482B5D /* pokedex_christian_leovido_swift3Tests.swift */; };
 		7A56CFC91D898B9E00482B5D /* pokedex_christian_leovido_swift3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A56CFC81D898B9E00482B5D /* pokedex_christian_leovido_swift3UITests.swift */; };
 		7A56CFD71D898ECB00482B5D /* pokemon.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7A56CFD61D898ECB00482B5D /* pokemon.csv */; };
+		7A56CFDA1D898FA200482B5D /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A56CFD91D898FA200482B5D /* Pokemon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		7A56CFC81D898B9E00482B5D /* pokedex_christian_leovido_swift3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pokedex_christian_leovido_swift3UITests.swift; sourceTree = "<group>"; };
 		7A56CFCA1D898B9E00482B5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A56CFD61D898ECB00482B5D /* pokemon.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
+		7A56CFD91D898FA200482B5D /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				7A56CFAC1D898B9E00482B5D /* Main.storyboard */,
 				7A56CFAF1D898B9E00482B5D /* Assets.xcassets */,
 				7A56CFD61D898ECB00482B5D /* pokemon.csv */,
+				7A56CFD81D898F8300482B5D /* Model */,
 				7A56CFB11D898B9E00482B5D /* LaunchScreen.storyboard */,
 				7A56CFB41D898B9E00482B5D /* Info.plist */,
 			);
@@ -126,6 +129,14 @@
 				7A56CFCA1D898B9E00482B5D /* Info.plist */,
 			);
 			path = pokedex_christian_leovido_swift3UITests;
+			sourceTree = "<group>";
+		};
+		7A56CFD81D898F8300482B5D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7A56CFD91D898FA200482B5D /* Pokemon.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +279,7 @@
 			files = (
 				7A56CFAB1D898B9E00482B5D /* ViewController.swift in Sources */,
 				7A56CFA91D898B9E00482B5D /* AppDelegate.swift in Sources */,
+				7A56CFDA1D898FA200482B5D /* Pokemon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
