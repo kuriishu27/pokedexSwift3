@@ -7,7 +7,6 @@
 //
 
 import XCTest
-@testable import pokedex_christian_leovido_swift3
 
 class pokedex_christian_leovido_swift3Tests: XCTestCase {
     
