@@ -7,3 +7,15 @@
 //
 
 import Foundation
+
+class PokeCell: UICollectionViewCell {
+    
+    @IBOutlet weak var thumbImg: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    
+    
+    var pokemon: Pokemon!
+    
+    func configure
+    
+}
