@@ -14,6 +14,7 @@
 		7A56CFB31D898B9E00482B5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A56CFB11D898B9E00482B5D /* LaunchScreen.storyboard */; };
 		7A56CFBE1D898B9E00482B5D /* pokedex_christian_leovido_swift3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A56CFBD1D898B9E00482B5D /* pokedex_christian_leovido_swift3Tests.swift */; };
 		7A56CFC91D898B9E00482B5D /* pokedex_christian_leovido_swift3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A56CFC81D898B9E00482B5D /* pokedex_christian_leovido_swift3UITests.swift */; };
+		7A56CFD71D898ECB00482B5D /* pokemon.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7A56CFD61D898ECB00482B5D /* pokemon.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		7A56CFC41D898B9E00482B5D /* pokedex_christian_leovido_swift3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pokedex_christian_leovido_swift3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A56CFC81D898B9E00482B5D /* pokedex_christian_leovido_swift3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pokedex_christian_leovido_swift3UITests.swift; sourceTree = "<group>"; };
 		7A56CFCA1D898B9E00482B5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A56CFD61D898ECB00482B5D /* pokemon.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				7A56CFAA1D898B9E00482B5D /* ViewController.swift */,
 				7A56CFAC1D898B9E00482B5D /* Main.storyboard */,
 				7A56CFAF1D898B9E00482B5D /* Assets.xcassets */,
+				7A56CFD61D898ECB00482B5D /* pokemon.csv */,
 				7A56CFB11D898B9E00482B5D /* LaunchScreen.storyboard */,
 				7A56CFB41D898B9E00482B5D /* Info.plist */,
 			);
@@ -237,6 +240,7 @@
 			files = (
 				7A56CFB31D898B9E00482B5D /* LaunchScreen.storyboard in Resources */,
 				7A56CFB01D898B9E00482B5D /* Assets.xcassets in Resources */,
+				7A56CFD71D898ECB00482B5D /* pokemon.csv in Resources */,
 				7A56CFAE1D898B9E00482B5D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,6 +518,7 @@
 				7A56CFCF1D898B9E00482B5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7A56CFD01D898B9E00482B5D /* Build configuration list for PBXNativeTarget "pokedex_christian_leovido_swift3Tests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +527,7 @@
 				7A56CFD21D898B9E00482B5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7A56CFD31D898B9E00482B5D /* Build configuration list for PBXNativeTarget "pokedex_christian_leovido_swift3UITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +536,7 @@
 				7A56CFD51D898B9E00482B5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
