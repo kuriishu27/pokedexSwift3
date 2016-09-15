@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A0C292A1D8AC5DB00B49353 /* pokemon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A0C29291D8AC5DB00B49353 /* pokemon.ttf */; };
+		7A0C292D1D8AC7B100B49353 /* music.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A0C292C1D8AC7B100B49353 /* music.png */; };
+		7A0C292F1D8AC7BF00B49353 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A0C292E1D8AC7BF00B49353 /* music.mp3 */; };
 		7A56CFA91D898B9E00482B5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A56CFA81D898B9E00482B5D /* AppDelegate.swift */; };
 		7A56CFAB1D898B9E00482B5D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A56CFAA1D898B9E00482B5D /* ViewController.swift */; };
 		7A56CFAE1D898B9E00482B5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A56CFAC1D898B9E00482B5D /* Main.storyboard */; };
@@ -38,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A0C29291D8AC5DB00B49353 /* pokemon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pokemon.ttf; sourceTree = "<group>"; };
+		7A0C292C1D8AC7B100B49353 /* music.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = music.png; sourceTree = "<group>"; };
+		7A0C292E1D8AC7BF00B49353 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
 		7A56CFA51D898B9E00482B5D /* pokedex_christian_leovido_swift3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pokedex_christian_leovido_swift3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A56CFA81D898B9E00482B5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A56CFAA1D898B9E00482B5D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +88,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A0C29281D8AC5BD00B49353 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7A56CFD61D898ECB00482B5D /* pokemon.csv */,
+				7A56CFE01D89B0E600482B5D /* csv.swift */,
+				7A0C29291D8AC5DB00B49353 /* pokemon.ttf */,
+				7A0C292C1D8AC7B100B49353 /* music.png */,
+				7A0C292E1D8AC7BF00B49353 /* music.mp3 */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		7A0C292B1D8AC60600B49353 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7A56CFAA1D898B9E00482B5D /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		7A56CF9C1D898B9D00482B5D = {
 			isa = PBXGroup;
 			children = (
@@ -105,14 +131,13 @@
 		7A56CFA71D898B9E00482B5D /* pokedex_christian_leovido_swift3 */ = {
 			isa = PBXGroup;
 			children = (
-				7A56CFDB1D89959C00482B5D /* View */,
 				7A56CFD81D898F8300482B5D /* Model */,
+				7A56CFDB1D89959C00482B5D /* View */,
+				7A0C292B1D8AC60600B49353 /* Controller */,
+				7A0C29281D8AC5BD00B49353 /* Resources */,
 				7A56CFA81D898B9E00482B5D /* AppDelegate.swift */,
-				7A56CFAA1D898B9E00482B5D /* ViewController.swift */,
 				7A56CFAC1D898B9E00482B5D /* Main.storyboard */,
 				7A56CFAF1D898B9E00482B5D /* Assets.xcassets */,
-				7A56CFD61D898ECB00482B5D /* pokemon.csv */,
-				7A56CFE01D89B0E600482B5D /* csv.swift */,
 				7A56CFB11D898B9E00482B5D /* LaunchScreen.storyboard */,
 				7A56CFB41D898B9E00482B5D /* Info.plist */,
 			);
@@ -266,10 +291,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A0C292A1D8AC5DB00B49353 /* pokemon.ttf in Resources */,
 				7A56CFB31D898B9E00482B5D /* LaunchScreen.storyboard in Resources */,
 				7A56CFB01D898B9E00482B5D /* Assets.xcassets in Resources */,
 				7A56CFD71D898ECB00482B5D /* pokemon.csv in Resources */,
 				7A56CFAE1D898B9E00482B5D /* Main.storyboard in Resources */,
+				7A0C292F1D8AC7BF00B49353 /* music.mp3 in Resources */,
+				7A0C292D1D8AC7B100B49353 /* music.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

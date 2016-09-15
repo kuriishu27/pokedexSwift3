@@ -7,10 +7,14 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
     @IBOutlet weak var collection: UICollectionView!
+    
+    @IBAction func musicButton(_ sender: AnyObject) {
+    }
     
     var pokemon = [Pokemon]()
     
@@ -51,6 +55,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
     }
 
+    
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
