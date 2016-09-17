@@ -1,0 +1,6 @@
+framework module Pods_pokedex_christian_leovido_swift3 {
+  umbrella header "Pods-pokedex_christian_leovido_swift3-umbrella.h"
+
+  export *
+  module * { export * }
+}
