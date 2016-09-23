@@ -54,6 +54,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         parsePokemonCSV()
         initAudio()
         
+        
     }
     
     func initAudio() {
