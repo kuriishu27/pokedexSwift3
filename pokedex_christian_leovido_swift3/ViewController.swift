@@ -69,7 +69,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             musicPlayer.numberOfLoops = -1
             musicPlayer.play()
             
-        } catch let err as NSError? {
+        } catch let err as Error? {
             
             print (err.debugDescription)
         }
@@ -85,7 +85,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             
             let csv = try CSV(contentsOfURL: path)
             let rows = csv.rows
-            print(rows)
             
             for row in rows {
                 
@@ -109,23 +108,29 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PokeCell", for: indexPath) as? PokeCell {
             
-            let poke: Pokemon!
-            
             if inSearchMode {
                 
+                let poke: Pokemon!
+                
                 poke = filteredPokemon[indexPath.row]
+                
                 cell.configureCell(poke)
+                
+                return cell
                 
             } else {
                 
+                let poke: Pokemon!
+                
                 poke = pokemon[indexPath.row]
+                
                 cell.configureCell(poke)
+                
+                return cell
                 
             }
             
-            cell.configureCell(poke)
             
-            return cell
             
         } else {
             
@@ -161,9 +166,10 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             
             return filteredPokemon.count
             
+        } else {
+            return pokemon.count
         }
         
-        return pokemon.count
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -185,13 +191,13 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             collection.reloadData()
             view.endEditing(true)
             
-        }else {
+        } else {
             
             inSearchMode = true
                     
             let lower = searchBar.text!.lowercased()
                     
-            filteredPokemon = pokemon.filter({$0.name.range(of:lower) != nil})
+            filteredPokemon = pokemon.filter({$0.name.range(of: lower) != nil})
             collection.reloadData()
                     
                     

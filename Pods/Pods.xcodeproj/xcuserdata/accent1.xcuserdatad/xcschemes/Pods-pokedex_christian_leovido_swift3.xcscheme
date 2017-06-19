@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0800"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "143E4E1A39178081C73C2E377942D0B0"
+               BlueprintIdentifier = "8DEDB1F2681532C385A5E1EF21E20461"
                BuildableName = "Pods_pokedex_christian_leovido_swift3.framework"
                BlueprintName = "Pods-pokedex_christian_leovido_swift3"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "143E4E1A39178081C73C2E377942D0B0"
+            BlueprintIdentifier = "8DEDB1F2681532C385A5E1EF21E20461"
             BuildableName = "Pods_pokedex_christian_leovido_swift3.framework"
             BlueprintName = "Pods-pokedex_christian_leovido_swift3"
             ReferencedContainer = "container:Pods.xcodeproj">
