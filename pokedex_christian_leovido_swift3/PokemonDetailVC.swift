@@ -8,10 +8,12 @@
 
 import UIKit
 
-class PokemonDetailVC: UIViewController {
+class PokemonDetailVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var nameLbl: UILabel!
     var pokemon: Pokemon!
+    
+    @IBOutlet weak var tableViewMoves: UITableView!
     
     @IBOutlet weak var mainImg: UIImageView!
     @IBOutlet weak var descriptionLbl: UILabel!
@@ -25,6 +27,31 @@ class PokemonDetailVC: UIViewController {
     @IBOutlet weak var nextEvoImg: UIImageView!
     @IBOutlet weak var evoLbl: UILabel!
     
+    
+    @IBOutlet weak var bioMovesSelector: UISegmentedControl!
+    @IBAction func bioMovesSelector(_ sender: Any) {
+        
+        print("selected")
+        print(bioMovesSelector.selectedSegmentIndex)
+        
+        if bioMovesSelector.selectedSegmentIndex == 0 {
+            
+            movesAndLevelStack.isHidden = true
+            tableViewMoves.isHidden = true
+            statsView.isHidden = false
+            
+        } else {
+            
+            tableViewMoves.isHidden = false
+            movesAndLevelStack.isHidden = false
+
+            statsView.isHidden = true
+        }
+        
+    }
+    @IBOutlet weak var statsView: UIStackView!
+    
+    @IBOutlet weak var movesAndLevelStack: UIStackView!
     @IBAction func backBtnPressed(_ sender: AnyObject) {
         
         dismiss(animated: true, completion: nil)
@@ -33,7 +60,12 @@ class PokemonDetailVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tableViewMoves.isHidden = true
+        movesAndLevelStack.isHidden = true
+        
         nameLbl.text = pokemon.name.capitalized
+        tableViewMoves.delegate = self
+        tableViewMoves.dataSource = self
         
         let img = UIImage(named: "\(pokemon.pokedexId)")
         
@@ -44,7 +76,7 @@ class PokemonDetailVC: UIViewController {
         pokemon.downloadPokemonDetail {
             
             self.updateUI()
-            
+            self.tableViewMoves.reloadData()
         }
 
         // Do any additional setup after loading the view.
@@ -74,11 +106,26 @@ class PokemonDetailVC: UIViewController {
         
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
     }
     
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return pokemon.moves.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        
+        let cell = tableViewMoves.dequeueReusableCell(withIdentifier: "MovesCell", for: indexPath) as! PokeMovesCell
+            
+            cell.pokemonMoves.text = pokemon.moves[indexPath.row]["name"] as! String
+            cell.pokemonLevel.text = String(pokemon.moves[indexPath.row]["level"] as! Int)
+
+            return cell
+//        return UITableViewCell()
+        
+    }
 
     /*
     // MARK: - Navigation

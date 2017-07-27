@@ -24,6 +24,17 @@ class Pokemon {
     fileprivate var _nextEvolutionId: String!
     fileprivate var _nextEvolutionLevel: String!
     fileprivate var _pokemonURL: String!
+    fileprivate var _moves: [[String:Any]]!
+    
+    var moves: [[String:Any]] {
+        
+        if _moves == nil {
+            _moves = [[String:Any]]()
+        }
+        
+        return _moves
+        
+    }
     
     var nextEvolutionId: String {
         
@@ -150,6 +161,28 @@ class Pokemon {
         Alamofire.request(_pokemonURL).responseJSON { (response) in
             
             if let dict = response.result.value as? Dictionary<String, AnyObject> {
+                
+                if let move = dict["moves"] as? [[String:Any]] {
+                    
+                    var appendThisMove = [[String:Any]]()
+                    
+                    for (_, value) in move.enumerated() {
+                        
+                        if value["learn_type"] as? String == "level up" {
+                            
+                            var i = [String:Any]()
+                            i["level"] = value["level"]
+                            i["name"] = value["name"]
+                            
+                            appendThisMove.append(i)
+
+                        }
+
+                    }
+                    
+                    self._moves = appendThisMove.sorted(by: {$1["level"] as! Int > $0["level"] as! Int})
+                    
+                }
                 
                 if let weight = dict["weight"] as? String {
                     
